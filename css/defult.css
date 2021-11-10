@@ -1,0 +1,102 @@
+/*index and Datasets and Benchmark*/
+body {
+    background: white;
+    text-align: center;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    padding-bottom: 8px;
+    margin: 0;
+    /*  margin-left: 30px; */
+}
+/* 大标题 */
+#title{
+    margin-top: 0.7em;
+    margin-bottom: 0.3em;
+    padding-bottom: 0.2em;
+    padding-top: 0.5em;
+}
+#title h1 {
+    color: #393D49;
+    font-size: 300%;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    margin-bottom: 0.3em;
+    padding-bottom: 0.2em;
+}
+/* 导航 */
+#nav{
+    padding-top: 0.5em;
+    padding-bottom: 1em;
+    padding-left: 8px;
+    padding-right: 8px;
+    white-space: nowrap;
+    text-align: left;
+    vertical-align: top;
+    font-family: sans-serif;
+    width: 800px;
+    min-width: 800px;
+    margin:auto;
+}
+#nav-ul{
+    height: 60px;
+}
+#content{
+    width: 800px;
+    min-width: 800px;
+    margin:auto;
+    margin-top: 2em;
+    text-align: left;
+}
+h2 {
+    color: #393D49;
+    font-size: 200%;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    padding-top: 0.8em;
+    margin-bottom: 0.2em;
+    padding-bottom: 0.3em;
+    line-height: 1.0;
+    border-bottom: 1px solid #d2d2d2;
+    text-align: left;
+}
+p{
+    text-align:left;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+.normal_h3{
+    color:#009688;
+    font-size: 175%;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+td {
+    text-align: center;
+    padding-top: 0.5em;
+}
+td img{
+    margin-bottom: 0.8em;
+}
+td a{
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    color:#1E9FFF;
+    font-size: 125%;
+}
+.pose_a{
+    margin-right:2em;
+}
+ul {
+    list-style-position: outside;
+    list-style-type: square;
+}
+li ul{
+    margin-top: -0.3em;
+}
+li p{
+    margin-bottom: 0.3em;
+}
+#content_2p {
+    margin-top: 1em;
+}
+
+.layui-table tbody tr td{
+    text-align: left;
+}
