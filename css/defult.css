@@ -39,7 +39,7 @@ body {
     height: 60px;
 }
 #content{
-    width: 800px;
+    width: 1000px;
     min-width: 800px;
     margin:auto;
     margin-top: 2em;
@@ -67,13 +67,23 @@ p{
     margin-top: 1.5em;
     margin-bottom: 0.5em;
 }
-
+.seq_img{
+    margin-bottom: 0.8em;
+    margin-left: 0.25em;
+}
+.seq_name{
+    color:#009688;
+    font-size: 120%;
+    margin-top: 0.25em;
+    margin-bottom: 0.5em;
+}
 td {
     text-align: center;
     padding-top: 0.5em;
 }
 td img{
     margin-bottom: 0.8em;
+    margin-left: 0.1em;
 }
 td a{
     font-family: 'Open Sans', Helvetica, Arial, sans-serif;
