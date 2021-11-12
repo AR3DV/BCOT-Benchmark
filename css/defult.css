@@ -68,14 +68,26 @@ p{
     margin-bottom: 0.5em;
 }
 .seq_img{
-    margin-bottom: 0.8em;
+    margin-bottom: 0.25em;
     margin-left: 0.25em;
 }
 .seq_name{
     color:#009688;
     font-size: 120%;
-    margin-top: 0.25em;
+    margin-top: 0.8em;
     margin-bottom: 0.5em;
+}
+.object_class{
+    color:#009688;
+    font-size: 120%;
+    margin-top: 1.0em;
+    margin-bottom: 1.0em;
+}
+.model_td{
+    width: 15%;
+}
+.model_td img{
+    height: 140px;
 }
 td {
     text-align: center;
