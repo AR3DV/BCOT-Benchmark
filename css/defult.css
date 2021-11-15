@@ -94,6 +94,7 @@ td {
     padding-top: 0.5em;
 }
 td img{
+    margin-top: 0.5em;
     margin-bottom: 0.8em;
     margin-left: 0.1em;
 }
@@ -121,4 +122,14 @@ li p{
 
 .layui-table tbody tr td{
     text-align: left;
+}
+
+video {
+    width: 50%;
+    height: 50%;
+}
+
+#wide_video{
+    width: 100%;
+    height: 100%;
 }

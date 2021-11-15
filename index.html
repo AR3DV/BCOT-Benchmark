@@ -100,7 +100,7 @@
                 <img src="https://raw.githubusercontent.com/MVT-Benchmark/Data/master/img/model/Deadpool.png">
             </td>
             <td class="model_td">
-                <img src="https://raw.githubusercontent.com/MVT-Benchmark/Data/master/img/model/FlashLight.png">
+                <img src="https://raw.githubusercontent.com/MVT-Benchmark/Data/master/img/model/Flashlight.png">
             </td>
             <td class="model_td">
                 <img src="https://raw.githubusercontent.com/MVT-Benchmark/Data/master/img/model/WallShelf.png">
@@ -138,7 +138,7 @@
                 <img src="https://raw.githubusercontent.com/MVT-Benchmark/Data/master/img/model/3DTouch.png">
             </td>
             <td class="model_td">
-                <img src="https://raw.githubusercontent.com/MVT-Benchmark/Data/master/img/model/RTI.png">
+                <img src="https://raw.githubusercontent.com/MVT-Benchmark/Data/master/img/model/RTIArm.png">
             </td>
         </tr>
         <tr>
@@ -286,8 +286,6 @@
             <img class="seq_img" src="https://raw.githubusercontent.com/MVT-Benchmark/Data/master/img/light_static_trans/0030.png"  width="160" height="128">
         </tr>
 
-        、、outdoor
-
 
 
 
@@ -360,156 +358,49 @@
         </tbody>
     </table>
 
-    <!--提供pose下载-->
-    <h3 class="normal_h3">poses</h3>
-    <today>
-            </today><table>
-        <tbody><tr>
-                <td><a class="pose_a" href="">01_poses</a></td>
-                <td><a class="pose_a" href="">02_poses</a></td>
-            </tr>
-        
-    </tbody></table>
 
-    <h2></h2>
+    <h3 class="normal_h3">Video</h3>
+    <table>
+        <tbody>
+            <h3 class="seq_name">complex_static_suspension</h3>
+            <tr>
+                    <video src="video/complex_static_suspension_render_FlashLight_30fps.mp4" controls="controls">
+                        您的浏览器不支持 video 标签。
+                    </video>
+            </tr>
+            <h3 class="seq_name">light_dynamic_handheld</h3>
+            <tr>
+                    <video src="video/light_dynamic_handheld_render_Squirrel_30fps.mp4" controls="controls">
+                        您的浏览器不支持 video 标签。
+                    </video>
+            </tr>
+            <h3 class="seq_name">outdoor_dynamic_scene2_handheld</h3>
+            <tr>
+                    <video id="wide_video" src="video/outdoor_dynamic_scene2_handheld_Stitch_30fps.mp4" controls="controls">
+                        您的浏览器不支持 video 标签。
+                    </video>
+            </tr>
+        </tbody>
+    </table>
+
     <br><br><br>
 
 
-    <h2>Visual Trackers</h2>
-    <p>We have tested X publicly available visual trackers which are listed below.</p>
-    <table width="100%" class="layui-table">
-        <thead>
-        <tr>
-            <th>Tracker</th>
-            <th>Reference</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td>EDF</td>
-            <td>Wang B, Zhong F, Qin X. Robust edge-based 3D object tracking with direction-based pose validation[J]. Multimedia Tools and Applications, 2018: 1-25.</td>
-
-        </tr>
-        <tr>
-            <td>GOS</td>
-            <td>Wang G, Wang B, Zhong F, et al. Global optimal searching for textureless 3D object tracking[J]. The Visual Computer, 2015, 31(6-8): 979-988.</td>
-        </tr>
-        <tr>
-            <td>XXX</td>
-            <td>XXXXXXXXXX XXXXX XXXXXXXXXXXX XXXXXXXXXXXX XXXXXXXXXXXXXXXXXXXXXXXXXXX XXXXXXXXX XXXXXXX</td>
-        </tr>
-        <tr>
-            <td>XXX</td>
-            <td>XXXXXXXXXX XXXXX XXXXXXXXXXXX XXXXXXXXXXXX XXXXXXXXXXXXXXXXXXXXXXXXXXX XXXXXXXXX XXXXXXX</td>
-        </tr>
-        <tr>
-            <td>XXX</td>
-            <td>XXXXXXXXXX XXXXX XXXXXXXXXXXX XXXXXXXXXXXX XXXXXXXXXXXXXXXXXXXXXXXXXXX XXXXXXXXX XXXXXXX</td>
-        </tr>
-        <tr>
-            <td>XXX</td>
-            <td>XXXXXXXXXX XXXXX XXXXXXXXXXXX XXXXXXXXXXXX XXXXXXXXXXXXXXXXXXXXXXXXXXX XXXXXXXXX XXXXXXX</td>
-        </tr>
+    
+    <!--提供pose下载-->
+    <h3 class="normal_h3">Code</h3>
+    <table>
+        <tbody><tr>
+                <td>
+                    &nbsp; &nbsp; &nbsp;
+                    <a class="pose_a" href="download/codes.zip">download code</a>
+                </td>
+            </tr>
         </tbody>
     </table>
-    <h2>Ranking</h2>
-    <p>For the tracker above, we give a ranking for 3d error, percentage, and relative rate.</p>
 
-    <div class="layui-tab">
-        <ul class="layui-tab-title">
-            <li class="layui-this">3D Error</li>
-            <li>Percentage</li>
-            <li>Relative Rate</li>
+    <br><br><br>
 
-        </ul>
-        <!--3d误差排名-->
-        <div class="layui-tab-content">
-            <div class="layui-tab-item layui-show">
-                <table width="100%" class="layui-table">
-                    <thead>
-                    <tr>
-                        <th>Rank</th>
-                        <th>Tracker</th>
-                        <th>Data</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>EDF</td>
-                        <td>0.0156</td>
-
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>GOS</td>
-                        <td>0.1523</td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div class="layui-tab-item">
-                <div class="layui-tab-item layui-show">
-                    <table width="100%" class="layui-table">
-                        <thead>
-                        <tr>
-                            <th>Rank</th>
-                            <th>Tracker</th>
-                            <th>Data</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>EDF</td>
-                            <td>0.0156</td>
-
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>GOS</td>
-                            <td>0.1523</td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-            <div class="layui-tab-item">
-                <div class="layui-tab-item layui-show">
-                    <table width="100%" class="layui-table">
-                        <thead>
-                        <tr>
-                            <th>Rank</th>
-                            <th>Tracker</th>
-                            <th>Data</th>
-                            <th>CPU</th>
-                            <th>GPU</th>
-                            <th>RAM</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>EDF</td>
-                            <td>0.0156</td>
-                            <th>AMD 4800</th>
-                            <th>RTX 2060</th>
-                            <th>16GB</th>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>GOS</td>
-                            <td>0.1523</td>
-                            <th>Intel i7</th>
-                            <th>RTX 950</th>
-                            <th>8GB</th>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <h2>Evaluation</h2>
     <p>All the evaluation results and the Matlab code for generating the following figures are available at download.</p>
