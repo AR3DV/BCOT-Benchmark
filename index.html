@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
-    <title>MVT Benchmark</title>
+    <title>BCOT Benchmark</title>
     <link rel="stylesheet" href="css/defult.css">
 </head>
 
@@ -10,39 +10,22 @@
 <body><div id="title">
         <h1>BCOT Benchmark</h1>
 </div>
-    <title>MVT Benchmark</title>
+    <title>BCOT Benchmark</title>
     <link rel="stylesheet" href="css/defult.css">
     <link rel="stylesheet" href="layui/css/layui.css">
 
 <div id="content">
-    <!--<h2>introduce</h2>-->
-    <h3 class="normal_h3">Introduction</h3>
-    <p>
-        &nbsp; &nbsp; &nbsp;
-        Introduction Content
-    </p>
-
     <!--Abstract-->
     <h3 class="normal_h3">Abstract</h3>
-    <p>
+    <p id="abstract">
         &nbsp; &nbsp; &nbsp;
-        Abstract Content
-    </p>
-
-    <!--引用-->
-    <h3 class="normal_h3">Reference</h3>
-    <p>
-        &nbsp; &nbsp; &nbsp;
-        Reference Content
+        Template-based 3D object tracking still lacks a high-precision benchmark of real scenes due to the difficulty of annotating the accurate 3D poses of real moving video objects without using markers. In this paper, we present a multi-view approach to estimate the accurate 3D poses of real moving objects, and then use binocular data to construct a new benchmark for monocular textureless 3D object tracking. The proposed method requires no markers as well as cross-view point correspondences, and has no limitation to object and camera movement. The cameras only need to be synchronous,  relatively fixed and calibrated. Based on our object-centered model, we jointly optimize the object pose by minimizing shape re-projection constraints in all views, which greatly improves the accuracy compared with the single-view approach, and is even more accurate than the depth-based method. Our new benchmark dataset contains 20 textureless objects, 22 scenes, 404 video sequences and 126K images captured in real scenes. The annotation error is guaranteed to be less than 2mm, according to both theoretical analysis and validation experiments. We re-evaluate the state-of-the-art 3D object tracking methods with our dataset, reporting their performance ranking in real scenes.
     </p>
 
     <!--提供模型-->
     <h3 class="normal_h3">Models</h3>
     <table cellpadding="0" cellspacing="0" id="table_model" width="100%" align="center">
         <tbody>
-        <tr>
-            <td><p class="object_class" style="margin-top: 0em;">irregular object</p></td>
-        </tr>    
         <tr>
             <td class="model_td">
                 <img src="https://raw.githubusercontent.com/bcot-Benchmark/Data/master/img/model/Cat.png">
@@ -62,9 +45,6 @@
             <td class="model_td"><a>Ape</a></td>
             <td class="model_td"><a>Jack</a></td>
             <td class="model_td"><a>Tube</a></td>
-        </tr>
-        <tr>
-            <td><p class="object_class">hollowed object</p></td>
         </tr>
         <tr>
             <td class="model_td">
@@ -89,11 +69,6 @@
             <td class="model_td"><a>Vampire Queen</a></td>
             <td class="model_td"><a>Teapot</a></td>
             <td class="model_td"><a>RJ45 Clip</a></td>
-        </tr>
-
-
-        <tr>
-            <td><p class="object_class">symmetric object</p></td>
         </tr>
         <tr>
             <td class="model_td">
@@ -332,19 +307,49 @@
             <h3 class="seq_name">complex_static_suspension</h3>
             <tr>
                     <video src="https://raw.githubusercontent.com/bcot-Benchmark/Data/master/video/complex_static_suspension_render_FlashLight_30fps.mp4" controls="controls">
-                        您的浏览器不支持 video 标签。
+                        Your browser does not support video tags
                     </video>
             </tr>
             <h3 class="seq_name">light_dynamic_handheld</h3>
             <tr>
                     <video src="https://raw.githubusercontent.com/bcot-Benchmark/Data/master/video/light_dynamic_handheld_render_Squirrel_30fps.mp4" controls="controls">
-                        您的浏览器不支持 video 标签。
+                        Your browser does not support video tags
+                    </video>
+            </tr>
+            <h3 class="seq_name">light_static_suspension</h3>
+            <tr>
+                    <video id="wide_video" src="https://raw.githubusercontent.com/bcot-Benchmark/Data/master/video/light_static_suspension-suspension_306frames_30fps.mp4" controls="controls">
+                        Your browser does not support video tags
+                    </video>
+            </tr>
+            <h3 class="seq_name">light_static_handheld</h3>
+            <tr>
+                    <video id="wide_video" src="https://raw.githubusercontent.com/bcot-Benchmark/Data/master/video/light_static_handheld-handheld_359frames_30fps.mp4" controls="controls">
+                        Your browser does not support video tags
+                    </video>
+            </tr>
+            <h3 class="seq_name">light_dynamic_suspension</h3>
+            <tr>
+                    <video id="wide_video" src="https://raw.githubusercontent.com/bcot-Benchmark/Data/master/video/light_dynamic_suspension-suspension_271frames_30fps.mp4" controls="controls">
+                        Your browser does not support video tags
+                    </video>
+            </tr>
+            <h3 class="seq_name">easy_static_handheld</h3>
+            <tr>
+                    <video id="wide_video" src="https://raw.githubusercontent.com/bcot-Benchmark/Data/master/video/easy_static_handheld-handheld_359frames_30fps.mp4" controls="controls">
+                        Your browser does not support video tags
+                    </video>
+            </tr>
+            <h3 class="seq_name">complex_static_trans</h3>
+            <tr>
+                    <video id="wide_video" src="https://raw.githubusercontent.com/bcot-Benchmark/Data/master/video/complex_static_trans-trans_359frames_30fps.mp4" controls="controls">
+                        Your browser does not support video tags
                     </video>
             </tr>
             <h3 class="seq_name">outdoor_dynamic_scene2_handheld</h3>
             <tr>
                     <video id="wide_video" src="https://raw.githubusercontent.com/bcot-Benchmark/Data/master/video/outdoor_dynamic_scene2_handheld_Stitch_30fps.mp4" controls="controls">
-                        您的浏览器不支持 video 标签。
+                        Your browser does not support video tags
                     </video>
             </tr>
         </tbody>
@@ -371,14 +376,37 @@
     </table>
     <p style="text-align: center">Comparison of monocular 3D tracking methods</p>
 
+    <table cellpadding="0" cellspacing="0" class="table_dataset" width="100%" align="center">
+        <tbody>
+        <tr>
+                <img src="https://raw.githubusercontent.com/bcot-Benchmark/Data/master/img/Evaluation/indoor.PNG" width="100%">
+        </tr>
+        </tbody>
+    </table>
+    <p style="text-align: center">Comparison of monocular 3D tracking methods of indoor scenes</p>
+
+    <table cellpadding="0" cellspacing="0" class="table_dataset" width="100%" align="center">
+        <tbody>
+        <tr>
+                <img src="https://raw.githubusercontent.com/bcot-Benchmark/Data/master/img/Evaluation/outdoor.PNG" width="100%">
+        </tr>
+        </tbody>
+    </table>
+    <p style="text-align: center">Comparison of monocular 3D tracking methods of outdoor scenes</p>
+
 
     <!--提供pose下载-->
     <h3 class="normal_h3">Code</h3>
     <table>
-        <tbody><tr>
+        <tbody>
+            <tr>
                 <td>
                     &nbsp; &nbsp; &nbsp;
                     <a class="pose_a" href="download/codes.zip">download code</a>
+                </td>
+                <td>
+                    &nbsp; &nbsp; &nbsp;
+                    <a class="pose_a" href="https://pan.baidu.com/s/1TIRd_ZTwPXUNmpmEvoJZ7w ">download dataset (Extraction Code:391r)</a>
                 </td>
             </tr>
         </tbody>
