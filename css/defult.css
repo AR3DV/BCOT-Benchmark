@@ -93,6 +93,9 @@ p{
     margin-top: 1.0em;
     margin-bottom: 1.0em;
 }
+.model_td_all{
+    width:200px;
+}
 .model_td{
     width: 15%;
 }
