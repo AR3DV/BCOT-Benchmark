@@ -67,8 +67,13 @@ p{
     margin-top: 1.5em;
     margin-bottom: 0.5em;
 }
-#abstract{
+.normal_text{
     font-size: 150%;
+    text-align:justify;
+    text-justify:inter-word;
+}
+.namespace_text{
+    font-size: 110%;
     text-align:justify;
     text-justify:inter-word;
 }
