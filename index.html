@@ -21,7 +21,55 @@
         &nbsp; &nbsp; &nbsp;
         Template-based 3D object tracking still lacks a high-precision benchmark of real scenes due to the difficulty of annotating the accurate 3D poses of real moving video objects without using markers. In this paper, we present a multi-view approach to estimate the accurate 3D poses of real moving objects, and then use binocular data to construct a new benchmark for monocular textureless 3D object tracking. The proposed method requires no markers as well as cross-view point correspondences, and has no limitation to object and camera movement. The cameras only need to be synchronous,  relatively fixed and calibrated. Based on our object-centered model, we jointly optimize the object pose by minimizing shape re-projection constraints in all views, which greatly improves the accuracy compared with the single-view approach, and is even more accurate than the depth-based method. Our new benchmark dataset contains 20 textureless objects, 22 scenes, 404 video sequences and 126K images captured in real scenes. The annotation error is guaranteed to be less than 2mm, according to both theoretical analysis and validation experiments. We re-evaluate the state-of-the-art 3D object tracking methods with our dataset, reporting their performance ranking in real scenes.
     </p>
-
+    <br><br>
+    <!--提供dataset下载-->
+    <h3 class="normal_h3">Download Dataset</h3>
+    <table>
+        <br>
+        <tbody>
+            <tr>
+                <td>
+                    &nbsp; &nbsp; &nbsp;
+                    <a class="pose_a" href="https://1drv.ms/u/s!AkJTnAajBgnZaiqp6kkruPwPgys?e=BRVgW2">OneDrive</a>
+                </td>
+                <td>
+                    &nbsp; &nbsp; &nbsp;
+                    <a class="pose_a" href="https://pan.baidu.com/s/1_RaB_Pp7lxTMukXb6li82w">BaiduYun (Extraction Code:xgkm)</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <br><br>
+    <!--提供code下载-->
+    <h3 class="normal_h3">Code</h3>
+    <table>
+        <p class="normal_text">
+            &nbsp;&nbsp;&nbsp;The implementation of the proposed joint optimization framework based on multi-view data.
+        </p>
+        <p class="normal_text">
+            &nbsp;&nbsp;&nbsp;Monocular tracking: Observed from another view, there is a large translation error.
+        </p>
+        <p class="normal_text">
+            &nbsp;&nbsp;&nbsp;Multi-view tracking: Observe precise result from any view.
+        </p>
+        <br>
+        <tbody>
+            <tr>
+                <td>
+                    &nbsp; &nbsp; &nbsp;
+                    <a class="pose_a" href="download/codes.zip">download code</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <br><br>
+    <!-- demo -->
+    <h3 class="normal_h3">Demo</h3>
+    <!-- <video id="wide_video" src="https://raw.githubusercontent.com/bcot-Benchmark/Data/master/video/outdoor_movable_scene2_handheld_Stitch_30fps.mp4" controls="controls"> -->
+    <video id="demo_video" src="video/demo.mp4" controls="controls">
+        Your browser does not support video tags
+    </video>
+    <br><br>
     <!--提供模型-->
     <h3 class="normal_h3">Models</h3>
     <img width="80%" src="https://raw.githubusercontent.com/bcot-Benchmark/Data/master/img/model/model.png">
@@ -420,51 +468,13 @@
     </div>
     <p style="text-align: center">Outdoor scene tracking accuracy under various ADD error tolerance thresholds</p>
     <br><br>
-
-    <h3 class="normal_h3">Demo</h3>
-    <!-- <video id="wide_video" src="https://raw.githubusercontent.com/bcot-Benchmark/Data/master/video/outdoor_movable_scene2_handheld_Stitch_30fps.mp4" controls="controls"> -->
-    <video id="demo_video" src="video/demo.mp4" controls="controls">
-        Your browser does not support video tags
-    </video>
-    <br><br>
-    <!--提供pose下载-->
-    <h3 class="normal_h3">Code</h3>
-    <table>
-        <p class="namespace">
-            &nbsp;&nbsp;&nbsp;The implementation of the proposed joint optimization framework based on multi-view data.
-        </p>
-        <p class="namespace">
-            &nbsp;&nbsp;&nbsp;Monocular tracking: Observed from another view, there is a large translation error.
-        </p>
-        <p class="namespace">
-            &nbsp;&nbsp;&nbsp;Multi-view tracking: Observe precise result from any view.
-        </p>
-        <br>
-        <tbody>
-            <tr>
-                <td>
-                    &nbsp; &nbsp; &nbsp;
-                    <a class="pose_a" href="download/codes.zip">download code</a>
-                </td>
-                <td>
-                    &nbsp; &nbsp; &nbsp;
-                    <a class="pose_a" href="https://pan.baidu.com/s/1_RaB_Pp7lxTMukXb6li82w">download dataset (Extraction Code:xgkm)</a>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-
+    <!--article information-->
+    <h3 class="normal_h3">Article Information</h3>
+    <p class="normal_text">
+        BCOT: A Markerless High-Precision 3D Object Tracking Benchmark. Jiachen Li, Bin Wang, Shiqiang Zhu, Xin Cao, Fan Zhong, Wenxuan Chen, Te Li*, Jason Gu, Xueying Qin*. CVPR 2022.
+    </p>
     <br><br><br>
 
 
 </div>
-<!-- <script>
-    //注意：导航 依赖 element 模块，否则无法进行功能性操作
-    layui.use('element', function(){
-        var element = layui.element;
-
-    });
-</script> -->
-
-
 </body></html>
